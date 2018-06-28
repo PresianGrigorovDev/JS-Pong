@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<title>Pong</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<center>
+
+    <!-- Table with the left/right scoreboards and the main game screen. -->
+        <table>
+            <tr>
+                <th>
+                    <canvas id="left_score" width="200" height=" 400"></canvas>
+                </th>
+                <th>
+                    <canvas id="pong" width="600" height="400"></canvas>
+                </th>
+                <th>
+                    <canvas id="right_score" width="200" height="400"></canvas>
+                </th>
+            </tr>
+        </table>
+
+    <!-- Reset, Pause buttons. -->
+        <img width="50" height="50" class="button_reset" onclick="reset()" src="images/refresh-button.png">
+        <img width="50" height="50" class="button_pause" onclick=pauseButton++ src="images/pause-button.png">
+
+
+    <!-- Adding the JS scripts. -->
+        <script src="pong.js"></script>
+        <script src="scoreboard.js"></script>
+
+
+</body>
+</html>
